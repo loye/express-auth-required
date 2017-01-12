@@ -7,6 +7,7 @@
 
 const Authentication = require('./authentication');
 const Authorization = require('./authorization');
+const CookieCredentialProvider = require('./authentication/credential-provider-cookie');
 
 class Auth {
   /**
@@ -55,3 +56,4 @@ class Auth {
 }
 
 module.exports = Auth;
+module.exports.CookieCredentialProvider = CookieCredentialProvider;
